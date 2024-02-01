@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/edit-photo.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>Редактирование фото</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="edit-photo.html">Редактирование фото</a></li>
+
+           
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Редактировать текст</a>
+                    <div class="dropdown-content">
+                        <a href="edit-text.html">Общий редактор</a>
+                        <a href="converter.html">Конвертер регистров</a>
+                    </div>
+                </li>
+                <li><a href="about-us.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="content">
+    <button id="startEditingButton" onclick="startEditing()">Начать редактирование</button>
+    <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="loadImage(event)">
+    
+    <canvas id="canvas"></canvas>
+
+    <form id="filterControls">
+        <label for="grayscaleRange">Черно-белый</label>
+        <input type="range" id="grayscaleRange" min="0" max="100" value="0" step="1" oninput="applyFilter('grayscale', this.value)">
+        
+        <label for="sepiaRange">Сепия</label>
+        <input type="range" id="sepiaRange" min="0" max="100" value="0" step="1" oninput="applyFilter('sepia', this.value)">
+        
+        <label for="invertRange">Инверсия</label>
+        <input type="range" id="invertRange" min="0" max="100" value="0" step="1" oninput="applyFilter('invert', this.value)">
+        
+        <label for="blurRange">Размытие</label>
+        <input type="range" id="blurRange" min="0" max="10" value="0" step="0.1" oninput="applyFilter('blur', this.value)">
+        
+        <label for="brightnessRange">Яркость</label>
+        <input type="range" id="brightnessRange" min="0" max="200" value="100" step="1" oninput="applyFilter('brightness', this.value)">
+        
+        <label for="contrastRange">Контраст</label>
+        <input type="range" id="contrastRange" min="0" max="200" value="100" step="1" oninput="applyFilter('contrast', this.value)">
+    </form>
+
+    <button onclick="resetFilters()">Сброс</button>
+    <button onclick="downloadImage()">Скачать изображение</button>
+</div>
+<footer>
+    <p>&copy; 2024 Ваша компания. Все права защищены.</p>
+</footer>
+<script src="/JS/script.js"></script>
+<script src="/JS/edit-photo.js"></script>
+
+
+</body>
+</html>

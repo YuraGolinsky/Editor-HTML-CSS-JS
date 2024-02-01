@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/edit-text.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+
+    <title>Редактировать текст</title>
+</head>
+<body>
+
+     <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="edit-photo.html">Редактирование фото</a></li>
+
+           
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Редактировать текст</a>
+                    <div class="dropdown-content">
+                        <a href="edit-text.html">Общий редактор</a>
+                        <a href="converter.html">Конвертер регистров</a>
+                    </div>
+                </li>
+                <li><a href="about-us.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="editor-container">
+    <textarea id="text-input" rows="8" cols="50" placeholder="Введите текст..."></textarea>
+    <button onclick="removeCommas()">Убрать запятые</button>
+    <button onclick="replaceDashes()">Убрать большие дефисы</button>
+    <button onclick="removeNumbers()">Убрать цифры</button>
+    <button onclick="countCharacters()">Посчитать символы</button>
+
+
+</div>
+<footer>
+    <p>&copy; 2024 Ваша компания. Все права защищены.</p>
+</footer>
+<script src="/JS/script.js"></script>
+<script src="/JS/edit-text.js"></script>
+
+</body>
+</html>

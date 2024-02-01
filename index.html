@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">   
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <title>Главная</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h1>Добро пожаловать на главную страницу</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="edit-photo.html">Редактирование фото</a></li>
+
+           
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Редактировать текст</a>
+                    <div class="dropdown-content">
+                        <a href="edit-text.html">Общий редактор</a>
+                        <a href="converter.html">Конвертер регистров</a>
+                    </div>
+                </li>
+                <li><a href="about-us.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <p>Лучший сервис для редактирования фотографий и текстов прямо здесь! Наша миссия - сделать ваш контент ярким и креативным. Присоединяйтесь к нам и преобразите свои идеи в удивительные произведения!</p>
+    </div>
+
+    <div class="features-section">
+        <h2>Особенности</h2>
+        <div class="feature-list">
+            <li>Мощный редактор фотографий с множеством инструментов</li>
+            <li>Простой и удобный редактор текста для творческих идей</li>
+            <li>Ознакомьтесь с нашей командой в разделе "О нас"</li>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="images/image_2024-02-01_12-40-05.png" alt="Slide 1" onclick="openPage('edit-photo.html')"></div>
+                <div class="slide"><img src="images/image_2024-02-01_12-41-50.png" alt="Slide 2" onclick="openPage('converter.html')"></div>
+                <div class="slide"><img src="images/photo_2024-02-01_12-45-16.jpg" alt="Slide 3" onclick="openPage('converter.html')"></div>
+            </div>
+            <button class="prev-btn" onclick="prevSlide()">❮</button>
+            <button class="next-btn" onclick="nextSlide()">❯</button>
+        </div>
+        
+        
+    <footer>
+        <p>&copy; 2024 Ваша компания. Все права защищены.</p>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+    <script src="/JS/index.js"></script>
+
+</body>
+
+</html>

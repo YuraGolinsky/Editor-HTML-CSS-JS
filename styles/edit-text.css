@@ -1,0 +1,66 @@
+
+
+/* Стили для заголовка и навигации */
+header {
+    background-color: #007BFF;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Стили для контейнера редактора */
+.editor-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для текстового поля */
+#text-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для кнопок */
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для размещения кнопок в горизонтальной линии */
+.editor-container button {
+    display: inline-block;
+}

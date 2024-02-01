@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">   
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/converter.css">    
+    <title>Конвертер регистро</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="edit-photo.html">Редактирование фото</a></li>
+
+           
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Редактировать текст</a>
+                    <div class="dropdown-content">
+                        <a href="edit-text.html">Общий редактор</a>
+                        <a href="converter.html">Конвертер регистров</a>
+                    </div>
+                </li>
+                <li><a href="about-us.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="converter-container">
+        <textarea id="inputText" placeholder="Вставьте текст сюда..."></textarea>
+        <div class="buttons-container">
+            <button onclick="convertToUpperCase()">ВЕРХНИЙ РЕГИСТР</button>
+            <button onclick="convertToLowerCase()">нижний регистр</button>
+            <button onclick="convertToSentenceCase()">Формат предложений</button>
+            <button onclick="convertToTitleCase()">Каждое Слово С Заглавной Буквы</button>
+            <button onclick="convertToToggleCase()">чЕрЕдОвАнИе рЕгИсТрОв</button>
+            <button onclick="convertToRandomCase()">ПРоиЗВольнОЕ нАПисанИе</button>
+            <button onclick="saveToFile()">Сохранить в текстовый файл</button>
+            <button onclick="clearFields()">Очистить поля</button>
+        </div>
+        <textarea id="outputText" placeholder="Результат будет здесь..." readonly></textarea>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ваша компания. Все права защищены.</p>
+    </footer>
+    <script src="/JS/script.js"></script>
+    <script src="/JS/converter.js"></script>
+</body>
+
+</html>

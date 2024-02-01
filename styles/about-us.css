@@ -1,0 +1,49 @@
+/* styles/about-us.css */
+
+/* General styles for the "О нас" page */
+body.about-us {
+    background-color: #f8f8f8;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text animation */
+.about-us-content h1 {
+    font-size: 2em;
+    color: #333;
+    position: relative;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about-us-content p {
+    color: #555;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,81 @@
+
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#canvas {
+    margin-top: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+#filters, #filterControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-label {
+    font-weight: bold;
+}
+
+.filter-slider {
+    width: 100%;
+}
+
+#filterControls button {
+    width: 150px;
+    margin-top: 20px;
+}
+
+/* Add this for responsive design */
+@media only screen and (max-width: 600px) {
+    .content, #filters, #filterControls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-container, #filterControls button {
+        width: 100%;
+    }
+}
